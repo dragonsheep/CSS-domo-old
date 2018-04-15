@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title>Contact Us | Dubai-art Center</title>
+  <link href="stylesheets/website.css" rel="stylesheet" type="text/css" />
+  <script src="javascripts/script.js" integrity="sha384-n9tAfm02D8a999IIATyHPrTbf+q9RIxejQiZ3xuRByyWPDq70nmTq63CmwHzUpNu" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact">
+
+  <header>
+    <h2 class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Dubai-art Center" title="Dubai-art Center" />
+      </a>
+    </h2>
+    <div class="main-nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="buying.html">BUYING</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="yield">
+    <main>
+      <section>
+        <h1>Contact Us</h1>
+        <p>Your comments are important to us. </p>
+
+        <div class="success label">
+          Form sumbitted successfully.
+        </div>
+        <div class="alert label">
+          Form submissing failed. It seems that you’re offline now.
+        </div>
+
+        <div class='tab-panels'>
+          <div class='tabs'>
+            <!-- Tab navigation -->
+            <a href='#tabcontent1' id='tab1'>Art review</a>
+            <a href='#tabcontent2' id='tab2'>Exhibition Application</a>
+            <a href='#tabcontent3' id='tab3'>Others</a>
+          </div>
+          <div id='tabcontent1' class='tab-content'>
+            <h2>Art Review</h2>
+            <form action='#' method='get' oninput='output.value=rating.value'>
+              <p>Note: [*] denotes mandatory field.</p>
+              <fieldset>
+                <label for='form1-name'>Your Name</label>
+                <input type='text' id='form1-name' name='name'>
+              </fieldset>
+              <fieldset>
+                <label for='form1-art'>[*] Which Art?</label>
+                <input type='text' id='form1-art' name='art' required>
+              </fieldset>
+              <fieldset>
+                <label for='form1-comments'>Your comments</label>
+                <input type='text' id='form1-comments' name='comment'>
+              </fieldset>
+              <fieldset>
+                <label for='rating'>[*] How you rate? <span>0-5</span></label>
+                <input type='range' id='rating' name='rating' min='0' max='5' value='3' step='1'>
+                <output name='output' for='rating'>3</output>
+              </fieldset>
+              <input type='submit' value='Submit Review'>
+            </form>
+          </div>
+          <div id='tabcontent2' class='tab-content'>
+            <h2>Exhibition Application</h2>
+            <form action='#' method='get'>
+              <p>Note: [*] denotes mandatory field.</p>
+              <fieldset>
+                <label for='form2-name'>[*] Your Name</label>
+                <input type='text' id='form2-name' name='name' required>
+              </fieldset>
+              <fieldset>
+                <label for='form2-email'>[*] Your Email</label>
+                <input type='email' id='form2-email' name='email' required>
+              </fieldset>
+              <fieldset>
+                <label for='form2-position'>[*] Which position do you want to apply?</label>
+                <input type='text' id='form2-position' name='position' required>
+              </fieldset>
+              <fieldset>
+                <label for='form2-resume'>[*] Your resume: </label>
+                <textarea id='form2-resume' name='resume' required></textarea>
+              </fieldset>
+              <input type='submit' value='Submit Job Application'>
+            </form>
+          </div>
+
+          <div id='tabcontent3' class='tab-content'>
+            <h2>Others</h2>
+            <form action='#' method='get'>
+              <p>Note: [*] denotes mandatory field.</p>
+              <fieldset>
+                <label for='form3-name'>Your Name</label>
+                <input type='text' id='form3-name' name='name'>
+              </fieldset>
+              <fieldset>
+                <label for='form2-email'>[*] Your Email</label>
+                <input type='email' id='form2-email' name='email' required>
+              </fieldset>
+              <fieldset>
+                <label for='form3-comments'>[*] Your comments: </label>
+                <textarea id='form3-comments' name='comment' required></textarea>
+              </fieldset>
+              <input type='submit' value='Submit Comments'>
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-help">
+      <div class="contact">
+        <h4>Contact Us</h4> Get in touch here if you have any queries or issues.
+      </div>
+      <div class="support">
+        <h4>Help & Support</h4> Click here for FAQs, order information, T&Cs, errata and code downloads.
+      </div>
+      <div class="newsletter">
+        <h4>Alerts & Offers</h4> Sign up to our emails for regular updates and exclusive discounts.
+        <form>
+          <input type='email' placeholder='Enter your email address'>
+          <input type='submit' value='subscribe'>
+        </form>
+      </div>
+      <div class="search">
+        <h4>Search Arts</h4>
+        <form>
+          <input type='text' placeholder='Art name, year'>
+          <input type='submit' value='search'>
+        </form>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a href='#top'>⬆ Back to Top.</a>
+    </div>
+    <div class="copyright">
+      &copy; 2016. Dubai-art Center.
+    </div>
+    <div class="footer-nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="buying.html">BUYING</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
